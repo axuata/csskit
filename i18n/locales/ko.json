@@ -1,0 +1,21 @@
+{
+  "layouts": {
+    "header": {
+      "home": "홈",
+      "tools": "도구"
+    }
+  },
+  "tools": {
+    "border-generator": {
+      "title": "테두리 생성기",
+      "desc": "테두리를 생성하는 도구입니다."
+    }
+  },
+  "pages": {
+    "home": {
+      "html_hero": "<span class=\"text-blue-5 font-700\">사용하기 편한</span> CSS 도구",
+      "try": "사용해보기",
+      "all_tools": "도구 모음"
+    }
+  }
+}

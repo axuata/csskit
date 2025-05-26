@@ -1,0 +1,9 @@
+body {
+    * {
+        font-family: 'Inter', 'Noto Sans JP', system-ui;
+    }
+
+    .font-mono {
+        font-family: 'JetBrains Mono', monospace;
+    }
+}

@@ -1,0 +1,54 @@
+# Todo
+- [-] FInput (text, number)
+  - props
+    - 必須
+      - id (string)
+      - type ('text' | 'number')
+    - 非必須
+      - ?initialValue (string)
+      - ?placeholder (string)
+      - ?autoComplete (string)
+      - ?pattern (string)
+      - ?minLength (number)
+      - ?maxLength (number)
+    - bool系
+      - ?isDisable (boolean)
+      - ?isRequired (boolean)
+      - ?isReadOnly (boolean)
+      - ?isAutoFocus (boolean)
+- [-] FSelect
+  - props
+    - 必須
+      - id (string)
+      - selects (string[])
+    - 非必須
+      - ?initialValue (string)
+      - ?autoComplete (string)
+    - bool系
+      - ?isDisabled (boolean)
+- [-] FRadio
+  - props
+    - 必須
+      - groupId (string)
+      - radios (string[])
+    - 非必須
+      - ?initialValue (string)
+    - bool系
+      - ?isDisable (boolean)
+- [-] FCheckbox
+  - props
+    - 必須
+      - groupId (string)
+      - checkboxes (string[])
+    - 非必須
+      - ?initialValue (string[])
+    - bool系
+      - ?isDisable (boolean)
+- [-] FColor
+  - props
+    - 必須
+      - id (string)
+    - 非必須
+      - ?initialValue (string)
+    - bool系
+      - ?isDisable (boolean)

@@ -1,0 +1,21 @@
+{
+  "layouts": {
+    "header": {
+      "home": "ホーム",
+      "tools": "ツール"
+    }
+  },
+  "tools": {
+    "border-generator": {
+      "title": "Border生成",
+      "desc": "borderを生成するツールです。"
+    }
+  },
+  "pages": {
+    "home": {
+      "html_hero": "<span class=\"text-blue-5 font-700\">直感的</span>なCSSツール",
+      "try": "使ってみる",
+      "all_tools": "すべてのツール"
+    }
+  }
+}
