@@ -1,5 +1,6 @@
 <script setup lang="ts">
-const {t, locales, setLocale} = useI18n();
+const {t, locales, locale, setLocale} = useI18n();
+const homePath = `/${locale.value}/`;
 </script>
 
 <template>
@@ -13,7 +14,7 @@ const {t, locales, setLocale} = useI18n();
         </div>
       </div>
       <div class="flex items-center gap-12px text-13px text-gray-7 font-500">
-        <NuxtLink to="/" class="hover:tracking-wider transition-all duration-100">{{ t('layouts.header.home') }}</NuxtLink>
+        <NuxtLink :to="homePath" class="hover:tracking-wider transition-all duration-100">{{ t('layouts.header.home') }}</NuxtLink>
         <select class="bg-white rounded-8px px-5px py-3px transition-colors duration-100 cursor-pointer hover:bg-gray-1">
           <option v-for="locale in locales" @click="setLocale(locale.code)">{{ locale.name }}</option>
         </select>
