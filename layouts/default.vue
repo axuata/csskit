@@ -6,7 +6,7 @@ const path = computed(() => {
 </script>
 
 <template>
-  <LHeader has-title />
+  <LHeader />
   <slot />
   <LFooter />
 </template>

@@ -6,7 +6,7 @@ const props = defineProps<{
 
 <template>
   <div>
-    <p class="text-12px text-gray-8 font-500">{{ label }}</p>
+    <p class="text-12px text-gray-8 font-500 mb-1px">{{ label }}</p>
     <slot />
   </div>
 </template>

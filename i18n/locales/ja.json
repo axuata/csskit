@@ -8,7 +8,14 @@
   "tools": {
     "border-generator": {
       "title": "Border生成",
-      "desc": "borderを生成するツールです。"
+      "desc": "borderを生成するツールです。",
+      "main": {
+        "options": "設定",
+        "type": "種類",
+        "width_px": "太さ (px)",
+        "color": "色",
+        "copy": "コピー"
+      }
     }
   },
   "pages": {

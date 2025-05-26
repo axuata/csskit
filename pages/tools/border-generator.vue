@@ -3,53 +3,70 @@ const {t} = useI18n();
 const options = ref({
   type: ref<string>(''),
   width: ref<number>(0),
-  color: ref<string>(''),
+  color: ref<string>('')
 });
 
 const generatedCss = computed(() => {
-  return `border: ${options.value.type} ${options.value.width} ${options.value.color}`;
+  return {
+    short: `border: ${options.value.type.toLowerCase()} ${options.value.width}px ${options.value.color};`,
+    long: `border-style: ${options.value.type.toLowerCase()};
+border-width: ${options.value.width}px;
+border-color: ${options.value.color};`
+  };
 });
+
+function onCopyClick(text: string) {
+  navigator.clipboard.writeText(text);
+}
 </script>
 
 <template>
   <div class="px-10px">
+    <!-- Title -->
     <div class="max-w-1200px mx-auto py-38px line-height-tight">
       <p class="font-600 text-gray-8 text-38px">{{ t('tools.border-generator.title') }}</p>
       <p class="font-500 text-gray-6 text-14px">{{ t('tools.border-generator.desc') }}</p>
     </div>
 
-    <div class="bg-#fbfbfd flex max-md:block gap-12px max-w-1200px mx-auto b-(solid 1px gray-2) p-12px rounded-12px">
-      <section>
-        <p class="text-16px font-600 text-gray-7 mb-4px">Options</p>
-        <div class="bg-white b-(solid 1px gray-2) px-10px py-8px rounded-10px w-300px">
-          <FLabeled label="Type">
-            <div class="py-4px">
-              <FRadio v-model="options.type" group-id="typeRadio" :radios="['Solid', 'Dashed' , 'Dotted' , 'Double']" initial-value="Solid" />
+    <!-- Tool -->
+    <div class="max-w-1200px mx-auto flex gap-16px">
+      <!-- Options -->
+      <div>
+        <div class="px-16px py-14px bg-#fbfbfd max-w-1200px mx-auto b-(solid 1px gray-2) rounded-12px shadow-sm">
+          <div class="w-300px">
+            <p class="font-600 text-gray-8 mb-4px">{{ t('tools.border-generator.main.options') }}</p>
+            <div class="bg-white b-(solid 1px gray-2) rounded-10px h-full px-10px py-8px flex flex-col gap-4px">
+              <FLabeled :label="t('tools.border-generator.main.type')">
+                <FRadio v-model="options.type" group-id="type" :radios="['Solid', 'Dashed', 'Dotted']" initial-value="Solid" />
+              </FLabeled>
+              <FLabeled :label="t('tools.border-generator.main.width_px')">
+                <FInput v-model="options.width" id="width" type="number" initial-value="1" />
+              </FLabeled>
+              <FLabeled :label="t('tools.border-generator.main.color')">
+                <FColor v-model="options.color" id="color" initial-value="#000000" />
+              </FLabeled>
             </div>
-          </FLabeled>
-          <FLabeled label="Width (px)">
-            <div class="py-4px flex gap-4px">
-              <FInput v-model="options.width" id="width" type="number" initial-value="1" />
-            </div>
-          </FLabeled>
-          <FLabeled label="Color">
-            <div class="py-4px flex gap-4px">
-              <FColor v-model="options.color" id="color" initial-value="#000000" />
-            </div>
-          </FLabeled>
+          </div>
         </div>
-      </section>
-      <section>
-        <p class="text-16px font-600 text-gray-7 mb-4px">Live Preview</p>
-        <div class="bg-white b-(solid 1px gray-2) w-400px h-186px p-32px rounded-10px">
-          <div :style="{ 'border': `${options.type.toLowerCase()} ${options.width}px ${options.color}` }" class="w-full h-full" />
+      </div>
+
+      <!-- Results -->
+      <div class="b-(solid 1px gray-2) rounded-12px w-full shadow-sm">
+        <div class="flex h-200px w-full items-center justify-center">
+          <div class="p-24px w-300px h-150px" :style="{'border': `${options.type.toLowerCase()} ${options.width}px ${options.color}`}" />
         </div>
-      </section>
-      <section>
-        <p class="text-16px font-600 text-gray-7 mb-4px">Code Preview</p>
-        <Shiki lang="css" :code="generatedCss" class="bg-white b-(solid 1px gray-2) p-16px rounded-8px" />
-        <CButton label="Copy" type="secondary" icon="tabler:copy" class="w-full mt-4px" />
-      </section>
+        <hr />
+        <div class="p-10px flex flex-col gap-8px">
+          <div class="bg-white flex justify-between items-center px-12px py-8px rounded-10px b-(solid 1px gray-2)">
+            <Shiki lang="css" :code="generatedCss.short" />
+            <CButton :label="t('tools.border-generator.main.copy')" type="secondary" icon="tabler:copy" @click="onCopyClick(generatedCss.short)" />
+          </div>
+          <div class="bg-white flex justify-between items-center px-12px py-8px rounded-10px b-(solid 1px gray-2)">
+            <Shiki lang="css" :code="generatedCss.long" />
+            <CButton :label="t('tools.border-generator.main.copy')" type="secondary" icon="tabler:copy" @click="onCopyClick(generatedCss.long)" />
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>

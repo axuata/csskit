@@ -8,7 +8,14 @@
   "tools": {
     "border-generator": {
       "title": "Border Generator",
-      "desc": "Just a border generator."
+      "desc": "Just a border generator.",
+      "main": {
+        "options": "Options",
+        "type": "Type",
+        "width_px": "Width (px)",
+        "color": "Color",
+        "copy": "Copy"
+      }
     }
   },
   "pages": {
