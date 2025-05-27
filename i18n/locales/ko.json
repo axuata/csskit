@@ -22,7 +22,17 @@
     "home": {
       "html_hero": "<span class=\"text-blue-5 font-700\">사용하기 편한</span> CSS 도구",
       "try": "사용해보기",
-      "all_tools": "도구 모음"
+      "all_tools": "도구 모음",
+      "features": {
+        "lightweight": {
+          "title": "경량",
+          "desc": "불필요한 요소를 최소화한 구성으로, 매우 가볍습니다."
+        },
+        "secure": {
+          "title": "안전",
+          "desc": "단순히 코드를 생성하기만 하므로, 안전하게 사용할 수 있습니다."
+        }
+      }
     }
   }
 }

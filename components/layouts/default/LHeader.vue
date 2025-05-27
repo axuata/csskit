@@ -15,7 +15,7 @@ const homePath = `/${locale.value}/`;
       </div>
       <div class="flex items-center gap-12px text-13px text-gray-7 font-500">
         <NuxtLink :to="homePath" class="hover:tracking-wider transition-all duration-100">{{ t('layouts.header.home') }}</NuxtLink>
-        <select class="bg-white rounded-8px px-5px py-3px transition-colors duration-100 cursor-pointer hover:bg-gray-1">
+        <select class="bg-white rounded-8px px-5px py-3px transition-colors duration-100 cursor-pointer hover:bg-gray-1 w-fit">
           <option v-for="locale in locales" @click="setLocale(locale.code)">{{ locale.name }}</option>
         </select>
       </div>

@@ -22,7 +22,17 @@
     "home": {
       "html_hero": "<span class=\"text-blue-5 font-700\">Intuitive</span> CSS Tools",
       "try": "Try",
-      "all_tools": "All Tools"
+      "all_tools": "All Tools",
+      "features": {
+        "lightweight": {
+          "title": "Lightweight",
+          "desc": "Extremely lightweight thanks to its minimal design."
+        },
+        "secure": {
+          "title": "Secure",
+          "desc": "It only generates code, so it's secure to use."
+        }
+      }
     }
   }
 }

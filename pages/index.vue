@@ -1,11 +1,23 @@
 <script setup lang="ts">
 const {t} = useI18n();
+const features = [
+  {
+    icon: 'twemoji:high-voltage',
+    title: t('pages.home.features.lightweight.title'),
+    desc: t('pages.home.features.lightweight.desc')
+  },
+  {
+    icon: 'twemoji:shield',
+    title: t('pages.home.features.secure.title'),
+    desc: t('pages.home.features.secure.desc')
+  },
+]
 </script>
 
 <template>
   <div>
     <!-- Hero Section -->
-    <section class="max-w-1200px mx-auto py-78px">
+    <section class="max-w-1200px mx-auto py-70px">
       <div class="text-44px line-height-tight font-600 mb-16px">
         <p>CSS Kit</p>
         <p v-html="t('pages.home.html_hero')"></p>
@@ -13,6 +25,17 @@ const {t} = useI18n();
       <div class="flex gap-6px px-5px">
         <CButtonLink :label="t('pages.home.try')" type="primary" to="/tools/" />
         <CButtonLink label="GitHub" type="secondary" icon="logos:github-icon" to="https://github.com/axuata/axuata_website" />
+      </div>
+      <div class="max-w-1200px mx-auto flex gap-12px mt-20px">
+        <div v-for="feature in features" class="flex flex-wrap gap-8px p-10px b-(solid 1px gray-2) rounded-12px">
+          <div class="size-35px bg-gray-1 rounded-8px flex items-center justify-center">
+            <Icon :name="feature.icon" class="size-20px" />
+          </div>
+          <div>
+            <p class="text-18px font-600 text-gray-8">{{ feature.title }}</p>
+            <p class="text-12px font-500 text-gray-7">{{ feature.desc }}</p>
+          </div>
+        </div>
       </div>
     </section>
 
