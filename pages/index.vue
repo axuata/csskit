@@ -17,7 +17,7 @@ const features = [
 <template>
   <div>
     <!-- Hero Section -->
-    <section class="max-w-1200px mx-auto py-70px">
+    <section class="max-w-1200px mx-auto py-70px max-md:px-10px">
       <div class="text-44px line-height-tight font-600 mb-16px">
         <p>CSS Kit</p>
         <p v-html="t('pages.home.html_hero')"></p>
@@ -40,7 +40,7 @@ const features = [
     </section>
 
     <!-- Tools Section -->
-    <section class="bg-#f3f8fc min-h-300px py-24px">
+    <section class="bg-#f3f8fc min-h-300px py-24px max-md:px-10px">
       <div class="max-w-1200px mx-auto">
         <h1 class="text-24px font-600 text-gray-9">{{ t('pages.home.all_tools') }}</h1>
         <div class="flex flex-wrap gap-22px pt-4px">
