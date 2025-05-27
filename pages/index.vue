@@ -24,7 +24,7 @@ const features = [
       </div>
       <div class="flex gap-6px px-5px">
         <CButtonLink :label="t('pages.home.try')" type="primary" to="/tools/" />
-        <CButtonLink label="GitHub" type="secondary" icon="logos:github-icon" to="https://github.com/axuata/axuata_website" />
+        <CButtonLink label="GitHub" type="secondary" icon="logos:github-icon" to="https://github.com/axuata/csskit" />
       </div>
       <div class="max-w-1200px mx-auto flex gap-12px mt-20px">
         <div v-for="feature in features" class="flex flex-wrap gap-8px p-10px b-(solid 1px gray-2) rounded-12px">
