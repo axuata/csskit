@@ -7,14 +7,19 @@
   },
   "tools": {
     "border-generator": {
-      "title": "테두리 생성기",
-      "desc": "테두리를 생성하는 도구입니다.",
+      "meta": {
+        "title": "테두리 생성기",
+        "desc": "테두리를 생성하는 도구입니다."
+      },
       "main": {
-        "options": "옵션",
-        "type": "유형",
-        "width_px": "너비 (px)",
-        "color": "색상",
-        "copy": "복사"
+        "options": "설정",
+        "preview": "미리보기",
+        "copy": "복사",
+        "option": {
+          "type": "종류",
+          "width": "너비(px)",
+          "color": "색상"
+        }
       }
     }
   },

@@ -7,14 +7,19 @@
   },
   "tools": {
     "border-generator": {
-      "title": "Border Generator",
-      "desc": "Just a border generator.",
+      "meta": {
+        "title": "Border Generator",
+        "desc": "Just a border generator."
+      },
       "main": {
         "options": "Options",
-        "type": "Type",
-        "width_px": "Width (px)",
-        "color": "Color",
-        "copy": "Copy"
+        "preview": "Preview",
+        "copy": "Copy",
+        "option": {
+          "type": "Type",
+          "width": "Width (px)",
+          "color": "Color"
+        }
       }
     }
   },

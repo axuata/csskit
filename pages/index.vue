@@ -44,7 +44,7 @@ const features = [
       <div class="max-w-1200px mx-auto">
         <h1 class="text-24px font-600 text-gray-9">{{ t('pages.home.all_tools') }}</h1>
         <div class="flex flex-wrap gap-22px pt-4px">
-          <CIconCard icon="twemoji:straight-ruler" :title="t('tools.border-generator.title')" :desc="t('tools.border-generator.desc')" to="/tools/border-generator/" />
+          <CIconCard icon="twemoji:straight-ruler" :title="t('tools.border-generator.meta.title')" :desc="t('tools.border-generator.meta.desc')" to="/tools/border-generator/" />
         </div>
       </div>
     </section>

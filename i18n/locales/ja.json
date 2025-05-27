@@ -7,14 +7,19 @@
   },
   "tools": {
     "border-generator": {
-      "title": "Border生成",
-      "desc": "borderを生成するツールです。",
+      "meta": {
+        "title": "Border生成",
+        "desc": "borderを生成するツールです。"
+      },
       "main": {
         "options": "設定",
-        "type": "種類",
-        "width_px": "太さ (px)",
-        "color": "色",
-        "copy": "コピー"
+        "preview": "プレビュー",
+        "copy": "コピー",
+        "option": {
+          "type": "種類",
+          "width": "幅（px）",
+          "color": "色"
+        }
       }
     }
   },

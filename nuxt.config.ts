@@ -40,6 +40,7 @@ export default defineNuxtConfig({
       {code: 'ja', name: '🇯🇵 日本語', file: 'ja.json'},
       {code: 'ko', name: '🇰🇷 한국어', file: 'ko.json'},
       {code: 'en', name: '🇺🇸 English', file: 'en.json'},
+      {code: 'nl', name: '🇳🇱 Nederlands', file: 'nl.json'},
     ],
     compilation: {
       strictMessage: false

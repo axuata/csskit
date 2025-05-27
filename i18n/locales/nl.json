@@ -1,0 +1,43 @@
+{
+  "layouts": {
+    "header": {
+      "home": "Home",
+      "tools": "Hulpmiddelen"
+    }
+  },
+  "tools": {
+    "border-generator": {
+      "meta": {
+        "title": "Border Generator",
+        "desc": "Gewoon een border generator."
+      },
+      "main": {
+        "options": "Opties",
+        "preview": "Voorbeeld",
+        "copy": "Kopieer",
+        "option": {
+          "type": "Type",
+          "width": "Breedte (px)",
+          "color": "Kleur"
+        }
+      }
+    }
+  },
+  "pages": {
+    "home": {
+      "html_hero": "<span class=\"text-blue-5 font-700\">Intuitive</span> CSS Hulpmiddelen",
+      "try": "Probeer",
+      "all_tools": "Alle Hulpmiddelen",
+      "features": {
+        "lightweight": {
+          "title": "Lichtgewicht",
+          "desc": "Extreem lichtgewicht dankzij het minimalistische ontwerp."
+        },
+        "secure": {
+          "title": "Veilig",
+          "desc": "Het genereert alleen code, daarom is het veilig voor gebruik"
+        }
+      }
+    }
+  }
+}
