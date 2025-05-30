@@ -75,11 +75,11 @@ function onCopyClick(text: string) {
       <div class="flex gap-6px mb-10px">
         <div class="px-8px py-2px b-(solid 1px gray-2) rounded-8px transition-all duration-100 shadow-sm" :class="mode === 'simple' ? 'bg-gray-1' : 'bg-white'">
           <input type="radio" name="tab" id="tab-simple" @change="onTabChange('simple')" class="appearance-none">
-          <label for="tab-simple" class="cursor-pointer text-14px text-gray-8 font-500">Simple</label>
+          <label for="tab-simple" class="cursor-pointer text-14px text-gray-8 font-500">{{ t('tools.border-generator.mode.simple') }}</label>
         </div>
         <div class="px-8px py-2px b-(solid 1px gray-2) rounded-8px transition-all duration-100 shadow-sm"  :class="mode === 'advanced' ? 'bg-gray-1' : 'bg-white'">
           <input type="radio" name="tab" id="tab-advanced" @change="onTabChange('advanced')" class="appearance-none">
-          <label for="tab-advanced" class="cursor-pointer text-14px text-gray-8 font-500">Advanced</label>
+          <label for="tab-advanced" class="cursor-pointer text-14px text-gray-8 font-500">{{ t('tools.border-generator.mode.advanced') }}</label>
         </div>
       </div>
 

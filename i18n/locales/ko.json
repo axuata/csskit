@@ -11,6 +11,10 @@
         "title": "테두리 생성기",
         "desc": "테두리를 생성하는 도구입니다."
       },
+      "mode": {
+        "simple": "간단함",
+        "advanced": "고급"
+      },
       "main": {
         "options": "설정",
         "preview": "미리보기",

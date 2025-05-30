@@ -11,6 +11,10 @@
         "title": "Border Generator",
         "desc": "Gewoon een border generator."
       },
+      "mode": {
+        "simple": "Eenvoudig",
+        "advanced": "Geavanceerd"
+      },
       "main": {
         "options": "Opties",
         "preview": "Voorbeeld",

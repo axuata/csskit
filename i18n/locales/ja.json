@@ -11,6 +11,10 @@
         "title": "Border生成",
         "desc": "borderを生成するツールです。"
       },
+      "mode": {
+        "simple": "シンプル",
+        "advanced": "上級"
+      },
       "main": {
         "options": "設定",
         "preview": "プレビュー",

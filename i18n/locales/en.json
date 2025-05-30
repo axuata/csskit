@@ -11,6 +11,10 @@
         "title": "Border Generator",
         "desc": "Just a border generator."
       },
+      "mode": {
+        "simple": "Simple",
+        "advanced": "Advanced"
+      },
       "main": {
         "options": "Options",
         "preview": "Preview",
