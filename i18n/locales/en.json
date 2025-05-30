@@ -2,7 +2,7 @@
   "layouts": {
     "header": {
       "home": "Home",
-      "tools": "Tools"
+      "language": "Language"
     }
   },
   "tools": {

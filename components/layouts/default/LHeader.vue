@@ -1,9 +1,18 @@
 <script setup lang="ts">
 const {t, locales, setLocale} = useI18n();
 const currentLocale = ref<string>('ja');
-const homePath = computed(() => {
-  return `/${currentLocale.value}/`;
-});
+
+function getLinkWithLocale(path?: string) {
+  if (path) {
+    if (path.startsWith('/')) {
+      return `/${currentLocale.value}${path}`;
+    } else {
+      return `/${currentLocale.value}/${path}`;
+    }
+  } else {
+    return `/${currentLocale.value}/`;
+  }
+}
 
 function onLocaleClick(localeCode: any) {
   setLocale(localeCode);
@@ -22,11 +31,15 @@ function onLocaleClick(localeCode: any) {
           <p>Alpha</p>
         </div>
       </div>
-      <div class="flex items-center gap-12px text-13px text-gray-7 font-500">
-        <NuxtLink :to="homePath" class="hover:tracking-wider transition-all duration-100">{{ t('layouts.header.home') }}</NuxtLink>
-        <select class="bg-white rounded-8px px-5px py-3px transition-colors duration-100 cursor-pointer hover:bg-gray-1 w-fit">
-          <option v-for="locale in locales" @click="onLocaleClick(locale.code)">{{ locale.name }}</option>
-        </select>
+      <div class="flex items-center gap-8px">
+        <LHeaderLink :label="t('layouts.header.home')" :path="getLinkWithLocale('/')" />
+        <LHeaderDropdown :label="t('layouts.header.language')" icon="tabler:world">
+          <div class="w-fit flex flex-col gap-5px">
+            <div v-for="locale in locales" @click="onLocaleClick(locale.code)" class="bg-white cursor-pointer whitespace-nowrap text-12px text-gray-7 px-6px py-3px b-(solid 1px gray-2) rounded-8px font-500 transition-all duration-100 hover:scale-105">
+              <p>{{ locale.name }}</p>
+            </div>
+          </div>
+        </LHeaderDropdown>
       </div>
     </div>
   </header>

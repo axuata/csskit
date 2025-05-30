@@ -2,7 +2,7 @@
   "layouts": {
     "header": {
       "home": "Home",
-      "tools": "Hulpmiddelen"
+      "language": "Taal"
     }
   },
   "tools": {
