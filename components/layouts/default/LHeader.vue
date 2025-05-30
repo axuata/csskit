@@ -35,7 +35,7 @@ function onLocaleClick(localeCode: any) {
         <LHeaderLink :label="t('layouts.header.home')" :path="getLinkWithLocale('/')" />
         <LHeaderDropdown :label="t('layouts.header.language')" icon="tabler:world">
           <div class="w-fit flex flex-col gap-5px">
-            <div v-for="locale in locales" @click="onLocaleClick(locale.code)" class="bg-white cursor-pointer whitespace-nowrap text-12px text-gray-7 px-6px py-3px b-(solid 1px gray-2) rounded-8px font-500 transition-all duration-100 hover:scale-105">
+            <div v-for="locale in locales" @click="onLocaleClick(locale.code)" class="bg-white cursor-pointer whitespace-nowrap text-12px text-gray-7 px-6px py-3px b-(solid 1px gray-2) rounded-8px font-500 transition-all duration-100 hover:b-(solid 1px gray-3)">
               <p>{{ locale.name }}</p>
             </div>
           </div>
