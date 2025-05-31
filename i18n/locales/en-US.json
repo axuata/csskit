@@ -1,0 +1,52 @@
+{
+  "layout": {
+    "header": {
+      "home": "Home",
+      "language": "Change Language"
+    }
+  },
+  "pages": {
+    "home": {
+      "hero": {
+        "title": "CSSKit",
+        "desc_html": "<span class=\"text-blue-5 font-700\">Intuitive</span> CSS Tools",
+        "try": "Try"
+      },
+      "features": {
+        "lightweight": {
+          "title": "Lightweight",
+          "desc": "Extremely lightweight thanks to its minimal design."
+        },
+        "secure": {
+          "title": "Secure",
+          "desc": "It only generates code, so it's secure to use."
+        }
+      },
+      "tools": {
+        "all_tools": "All Tools"
+      }
+    }
+  },
+  "tools": {
+    "border-generator": {
+      "meta": {
+        "title": "Border Generator",
+        "desc": "Just a border generator."
+      },
+      "mode": {
+        "simple": "Simple",
+        "advanced": "Advanced"
+      },
+      "main": {
+        "options": "Options",
+        "preview": "Preview",
+        "copy": "Copy",
+        "option": {
+          "type": "Type",
+          "width": "Width (px)",
+          "color": "Color"
+        }
+      }
+    }
+  }
+}

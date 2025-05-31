@@ -1,8 +1,30 @@
 {
-  "layouts": {
+  "layout": {
     "header": {
       "home": "Home",
-      "language": "Taal"
+      "language": "Verander van taal"
+    }
+  },
+  "pages": {
+    "home": {
+      "hero": {
+        "title": "CSS Kit",
+        "desc_html": "<span class=\"text-blue-5 font-700\">Intuitive</span> CSS Hulpmiddelen",
+        "try": "Probeer"
+      },
+      "features": {
+        "lightweight": {
+          "title": "Lichtgewicht",
+          "desc": "Extreem lichtgewicht dankzij het minimalistische ontwerp."
+        },
+        "secure": {
+          "title": "Veilig",
+          "desc": "Het genereert alleen code, daarom is het veilig voor gebruik"
+        }
+      },
+      "tools": {
+        "all_tools": "Alle Hulpmiddelen"
+      }
     }
   },
   "tools": {
@@ -23,23 +45,6 @@
           "type": "Type",
           "width": "Breedte (px)",
           "color": "Kleur"
-        }
-      }
-    }
-  },
-  "pages": {
-    "home": {
-      "html_hero": "<span class=\"text-blue-5 font-700\">Intuitive</span> CSS Hulpmiddelen",
-      "try": "Probeer",
-      "all_tools": "Alle Hulpmiddelen",
-      "features": {
-        "lightweight": {
-          "title": "Lichtgewicht",
-          "desc": "Extreem lichtgewicht dankzij het minimalistische ontwerp."
-        },
-        "secure": {
-          "title": "Veilig",
-          "desc": "Het genereert alleen code, daarom is het veilig voor gebruik"
         }
       }
     }

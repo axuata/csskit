@@ -19,11 +19,11 @@ const features = [
     <!-- Hero Section -->
     <section class="max-w-1200px mx-auto py-70px max-md:px-10px">
       <div class="text-44px line-height-tight font-600 mb-16px">
-        <p>CSS Kit</p>
-        <p v-html="t('pages.home.html_hero')"></p>
+        <p>{{ t('pages.home.hero.title') }}</p>
+        <p v-html="t('pages.home.hero.desc_html')"></p>
       </div>
       <div class="flex gap-6px px-5px">
-        <CButtonLink :label="t('pages.home.try')" type="primary" to="/tools/" />
+        <CButtonLink :label="t('pages.home.hero.try')" type="primary" to="/tools/" />
         <CButtonLink label="GitHub" type="secondary" icon="logos:github-icon" to="https://github.com/axuata/csskit" />
       </div>
       <div class="max-w-1200px mx-auto flex gap-12px mt-20px">
@@ -42,7 +42,7 @@ const features = [
     <!-- Tools Section -->
     <section class="bg-#f3f8fc min-h-300px py-24px max-md:px-10px">
       <div class="max-w-1200px mx-auto">
-        <h1 class="text-24px font-600 text-gray-9">{{ t('pages.home.all_tools') }}</h1>
+        <h1 class="text-24px font-600 text-gray-9">{{ t('pages.home.tools.all_tools') }}</h1>
         <div class="flex flex-wrap gap-22px pt-4px">
           <CIconCard icon="twemoji:straight-ruler" :title="t('tools.border-generator.meta.title')" :desc="t('tools.border-generator.meta.desc')" to="/tools/border-generator/" />
         </div>

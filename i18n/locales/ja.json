@@ -1,8 +1,30 @@
 {
-  "layouts": {
+  "layout": {
     "header": {
       "home": "ホーム",
-      "language": "言語"
+      "language": "言語の変更"
+    }
+  },
+  "pages": {
+    "home": {
+      "hero": {
+        "title": "CSSKit",
+        "desc_html": "<span class=\"text-blue-5 font-700\">直感的</span>なCSSツール",
+        "try": "使ってみる"
+      },
+      "features": {
+        "lightweight": {
+          "title": "軽量",
+          "desc": "無駄を最低限にした構成なので、極めて軽量です。"
+        },
+        "secure": {
+          "title": "安全",
+          "desc": "ただコードを生成するだけなので、安全です。"
+        }
+      },
+      "tools": {
+        "all_tools": "ツール一覧"
+      }
     }
   },
   "tools": {
@@ -23,23 +45,6 @@
           "type": "種類",
           "width": "幅（px）",
           "color": "色"
-        }
-      }
-    }
-  },
-  "pages": {
-    "home": {
-      "html_hero": "<span class=\"text-blue-5 font-700\">直感的</span>なCSSツール",
-      "try": "使ってみる",
-      "all_tools": "すべてのツール",
-      "features": {
-        "lightweight": {
-          "title": "軽量",
-          "desc": "無駄を最低限にした構成なので、極めて軽量です。"
-        },
-        "secure": {
-          "title": "安全",
-          "desc": "ただコードを生成するだけなので、安全です。"
         }
       }
     }
