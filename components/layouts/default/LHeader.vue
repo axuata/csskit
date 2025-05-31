@@ -17,7 +17,6 @@ function getLinkWithLocale(path?: string) {
 function onLocaleClick(localeCode: any) {
   setLocale(localeCode);
   currentLocale.value = localeCode;
-  console.log(currentLocale.value)
 }
 </script>
 

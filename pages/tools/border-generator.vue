@@ -39,10 +39,10 @@ border-width: ${options.value.simple.width}px;
 border-color: ${options.value.simple.color};`
     },
     advanced: {
-      short: `border-top: \`${options.value.advanced.top.type?.toLowerCase()} ${options.value.advanced.top.width}px ${options.value.advanced.top.color};
-border-right: \`${options.value.advanced.right.type?.toLowerCase()} ${options.value.advanced.right.width}px ${options.value.advanced.right.color};
-border-bottom: \`${options.value.advanced.bottom.type?.toLowerCase()} ${options.value.advanced.bottom.width}px ${options.value.advanced.bottom.color};
-border-left: \`${options.value.advanced.left.type?.toLowerCase()} ${options.value.advanced.left.width}px ${options.value.advanced.left.color};`,
+      short: `border-top: ${options.value.advanced.top.type?.toLowerCase()} ${options.value.advanced.top.width}px ${options.value.advanced.top.color};
+border-right: ${options.value.advanced.right.type?.toLowerCase()} ${options.value.advanced.right.width}px ${options.value.advanced.right.color};
+border-bottom: ${options.value.advanced.bottom.type?.toLowerCase()} ${options.value.advanced.bottom.width}px ${options.value.advanced.bottom.color};
+border-left: ${options.value.advanced.left.type?.toLowerCase()} ${options.value.advanced.left.width}px ${options.value.advanced.left.color};`,
       long: `border-top-style: ${options.value.advanced.top.type?.toLowerCase()};
 border-top-width: ${options.value.advanced.top.width}px;
 border-top-color: ${options.value.advanced.top.color};

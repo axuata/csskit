@@ -8,7 +8,7 @@
   "pages": {
     "home": {
       "hero": {
-        "title": "CSSKit",
+        "title": "CSS Kit",
         "desc_html": "<span class=\"text-blue-5 font-700\">Intuitive</span> CSS Tools",
         "try": "Try"
       },
